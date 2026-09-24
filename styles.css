@@ -1,0 +1,119 @@
+:root{
+       --bg: #0a1a10;
+       --bg: #0d1f14;
+       --card: #112318;
+       --card2: #0f1e14;
+       --green: #1db954;
+       --green2: #25d966;
+       --teal: #2ec4a0;
+       --text: #e8f5eb;
+       --muted: #8aab90;
+       --border: #1e3a24;
+       --white: #ffffff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+/*---------- Scrollbar ---------*/
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--green);
+    border-radius: 3px;
+}
+
+/*---------- HEADER/nav ---------*/
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem;
+    background: rgba(10, 26, 16, 0.85);
+    backdrop-filter: blur(14px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    /*font-family: 'Poppins', sans-serif;*/
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    color: var(--green);
+    text-decoration: none;
+}
+
+.logo-icon{
+    font-size: 1.4rem;
+}
+
+.nav-links{
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
+}
+
+.nav-links a{
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover{
+    color: var(--text);
+}
+
+.nav-actions{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-icon{
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: var(--card);
+    border: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.nav-icon:hover{
+    border-color: var(--green);
+}
+
+
+/*---------- HERO ---------*/
