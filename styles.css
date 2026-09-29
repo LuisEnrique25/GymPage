@@ -786,4 +786,76 @@ details[open].about-item summary::after{
 
 /*----------- FOOTER ---------*/
 
+footer{
+    background: var(--bg2);
+    border-top: 1px solid var(--border);
+    padding: 3rem 4rem 1.5rem;
+}
+
+.footer-grid{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 3rem;
+    margin-bottom: 2rem;
+}
+
+.footer-brand p{
+    color: var(--muted);
+    font-size: 0.82rem;
+    line-height: 1.7;
+    margin-top: 0.8re,;
+    max-width: 220px;
+}
+
+.footer-col h4{
+    color: var(--text);
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.footer-links{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.footer-links a{
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 0.82rem;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover{
+    color: var(--green);
+}
+
+.footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.75rem;
+    color: var(--muted);
+}
+
+.footer-bottom-links{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer-bottom-links a{
+    color: var(--muted);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-bottom-links a:hover{
+    color: var(--text);
+}
 
