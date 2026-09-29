@@ -44,6 +44,16 @@ section{
     background: var(--green);
     border-radius: 3px;
 }
+/*------------ BARRA DE PROGRESO -----------*/
+.progress-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    background: var(--green);
+    z-index: 200;
+    transition: width 0.1 linear;
+}
 
 /*---------- HEADER/nav ---------*/
 nav{
