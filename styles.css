@@ -417,7 +417,6 @@ section{
 }
 
 .program-category{
-    background-color: #cb3131;
     font-size: 0.65rem;
     color: var(--green);
     font-weight: 700;
@@ -710,7 +709,6 @@ details[open].about-item summary::after{
 /* ---------- CONTACT SECTION -------------*/
 
 .contact-section{
-    background-color: #cb3131;
     display:flex;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
