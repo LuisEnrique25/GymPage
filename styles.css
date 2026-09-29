@@ -1,6 +1,6 @@
 :root{
        --bg: #0a1a10;
-       --bg: #0d1f14;
+       --bg2: #0d1f14;
        --card: #112318;
        --card2: #0f1e14;
        --green: #1db954;
@@ -25,6 +25,10 @@ body{
     font-family: 'Poppins', sans-serif;
     background-color: var(--bg);
     color: var(--text);
+}
+
+section{
+    padding: 2rem 1rem;
 }
 
 /*---------- Scrollbar ---------*/
@@ -568,3 +572,138 @@ details[open].about-item summary::after{
     font-size: 0.85rem;
     line-height: 1.7;
 }
+
+/* -------- PRICING SECTION ----------*/
+
+.pricing-section{
+    background: var(--bg2);
+    margin-top: 0.5rem;
+}
+
+.pricing-section .section-label{
+    padding-top: 1rem;
+}
+
+.plans-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    width: auto;
+    margin: 1 auto;
+}
+
+.plan-card{
+    background-color: var(--card);
+    max-width: 400px;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 2rem 1.5rem;
+    transition: transform 0.3s, border-color 0.3s;
+    position: relative;
+}
+
+.plan-card:hover{
+    transform: translateY(-6px);
+}
+
+.plan-card.featured-plan{
+    background-color: var(--green);
+    border-color: var(--green);
+    color: rgb(255, 255, 255);
+}
+
+.plan-card.featured-plan .plan-feature::before{
+    background: rgba(255, 255, 255, 1);
+}
+
+.plan-badge{
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--muted);
+}
+
+.plan-card.featured-plan .plan-badge{
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.plan-price{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2rem;
+    color: var(--white);
+    margin-bottom: 1.5rem;
+}
+
+.plan-price span{
+    font-family: "Barlow", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.plan-features{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-bottom: 2rem;
+}
+
+.plan-feature{
+    font-size: 0.82rem;
+    color: var(--muted);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.plan-feature::before{
+    content: "";
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--green);
+    flex-shrink: 0;
+}
+
+.plan-feature.bold-feat{
+    color: var(--text);
+    font-weight: 600;
+}
+
+.plan-card.featured-plan .plan-feature.bold-feat{
+    color: #fff;
+}
+
+.plan-cta{
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+
+.plan-cta-outline{
+    background: transparent;
+    color: var(--muted);
+    border: 1px solid var(--border);
+}
+
+.plan-cta-outline:hover{
+    background-color: var(--green);
+    color: var(--text);
+}
+
+.plan-cta-solid{
+    background: #fff;
+    color: var(--green);
+    border: none;
+}
+
+.plan-cta-solid:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+
