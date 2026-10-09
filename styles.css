@@ -372,7 +372,7 @@ section{
     text-transform: uppercase;
     margin-bottom: 0.8rem;
 }
-.section-title{
+.section-tittle{
     text-align: center;
     /*font-family: "Bebas Neue", sans-serif;*/
     font-size: clamp(2rem, 4vw, 2.5rem);
