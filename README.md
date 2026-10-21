@@ -31,7 +31,7 @@ Through this project, I practiced:
 
 ## 🎨 Design
 
-The original design was based on an existing website found online and was recreated as a learning exercise.
+This project was inspired by a YouTube tutorial demonstrating how to build a fitness website using HTML, CSS, and vanilla JavaScript.
 
 The purpose of this project was not to create an original design, but to practice translating an existing interface into functional HTML, CSS, and JavaScript.
 
@@ -53,11 +53,9 @@ As part of my continued learning, I decided to rebuild and improve this project 
 
 ## ⚛️ React Version
 
-A new version of this project is being developed using React.
-
 The new implementation will improve the original project by introducing a component-based architecture and a responsive design.
 
-👉 **[View the React version](REACT_REPOSITORY_URL)**
+👉 **[GYM&FITNESS]([REACT_REPOSITORY_URL](https://github.com/LuisEnrique25/Gym-Fitness))**
 
 
 
