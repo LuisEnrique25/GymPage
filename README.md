@@ -54,8 +54,8 @@ As part of my continued learning, I decided to rebuild and improve this project 
 ## ⚛️ React Version
 
 The new implementation will improve the original project by introducing a component-based architecture and a responsive design.
-
-👉 **[GYM&FITNESS]([REACT_REPOSITORY_URL](https://github.com/LuisEnrique25/Gym-Fitness))**
+Status: Completed
+👉 **[GYM&FITNESS](https://github.com/LuisEnrique25/Gym-Fitness)**
 
 
 
